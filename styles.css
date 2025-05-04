@@ -13,13 +13,13 @@
 }
 /* variables */
 :root {
-  --green-color: #3cb815;
-  --light-green-color: #c0eb7b;
-  --orange-color: #ff7e00;
-  --light-orange-color: #f75f1d;
+  --green-color: #004225;
+  --light-green-color: #F5F5DC;
+  --orange-color: #FFB000;
+  --light-orange-color: #FFCF9D;
   --text-color: #1a2428;
-  --bg-color: #fff;
-  --cookie-color: #e66700;
+  --bg-color: #ffffff;
+  --cookie-color: #682f00;
 }
 /*Custom Scroll bar*/
 ::-webkit-scrollbar{
@@ -245,41 +245,36 @@ color: var(--cookie-color);
 }
 /*Boxes Color*/
 .box1{
-  background-color: #fef4ea;
+  background-color: #a55b12;
 }
 .box2{
-  background-color: #fef4ea;
+  background-color: #229100;
 }
 .box3{
-  background-color: #fef4ea;
+  background-color: #3f270f;
 }
 .box4{
-  background-color: #fef4ea;
+  background-color: #694a2b;
 }
 .box5{
-  background-color: #fef4ea;
+  background-color: #832109;
 }
-.product{
+.products{
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
 }
 .product-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px, auto));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 .product-container .box{
-  padding: 20px;
+ padding: 20px;
   box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
   border-radius: 0.5rem;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 .product-container .box img{
   width: 100%;
@@ -302,9 +297,7 @@ color: var(--cookie-color);
   color: var(--light-orange-color);
 }
 .product-container .box .price span{
-  color: var(--text-color);
-  display: inline-block;
-  margin-left: 0.5rem;
+   color: var(--text-color);
 }
 .product-container .box .bxs-cart-alt{
   position: absolute;
@@ -317,17 +310,15 @@ color: var(--cookie-color);
   border-radius: 0.5rem 0 0.5rem 0;
 }
 .product-container .box .bxs-cart-alt:hover{
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  background: var(--orange-color);
+  transition: 0.2s all linear;
 }
 .product-container .box .bxs-heart{
   position: absolute;
   top: 1rem;
   right: 1rem;
   font-size: 20px;
-  color: var(--light-orange-color);
+  color: red;
 }
 .product-container .box .discount{
   position: absolute;
