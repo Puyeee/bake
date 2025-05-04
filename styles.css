@@ -108,7 +108,7 @@ color: var(--cookie-color);
   display: none;
 }
 .container{
-  position: relative;
+  position: absolute;
   width: 100%;
   min-height: 430px;
   display: flex;
