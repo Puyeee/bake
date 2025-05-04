@@ -110,7 +110,7 @@ color: var(--cookie-color);
 .container{
   position: relative;
   width: 100%;
-  min-height: 640px;
+  min-height: 430px;
   display: flex;
   align-items: center;
   background: url(img/background.png);
@@ -178,6 +178,9 @@ color: var(--cookie-color);
   background-size: 100% auto;
   background-position: center;
   margin-left: 20px;
+}
+.swiper-button-prev::after{
+  display: none;
 }
 .heading{
   display: flex;
