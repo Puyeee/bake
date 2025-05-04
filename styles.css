@@ -34,9 +34,6 @@
 section{
   padding: 4.5rem 0 1.5rem;
 }
-section .home-swiper .img{
-  size-adjust: 400px 600px;
-}
 img{
   width: 100%;
 }
